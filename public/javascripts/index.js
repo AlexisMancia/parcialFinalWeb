@@ -11,7 +11,7 @@ function borrar(username){
     .then(async res =>{
         var response = await res.json();
         console.log(response);
-        window.alert("Pizza Borrada");
+        //window.alert("Pizza Borrada");
     })
     .catch(err =>{
         console.log(err);

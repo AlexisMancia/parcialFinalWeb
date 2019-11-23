@@ -1,12 +1,12 @@
 extends layout
 
 block content
-        form.form-style-7(method ="post")
-                h1 Borrar Orden
-                label(for="username") Nombre de Pizza a borrar
-                br
-                input#username(type="text", name="nombre_pizza" , required, placeholder="Quien ordeno?")
-                br
-                input#submit_btn(type="submit" value="Borrar")
-                script(src='/javascripts/index.js')
+        
+        h1 Borrar Orden
+        label(for="username") Nombre de Pizza a borrar
+        br
+        input#username(type="text", name="nombre_pizza" , required, placeholder="Nombre")
+        br
+        input#submit_btn(type="submit" value="Borrar")
+        script(src='/javascripts/index.js')
         include botones.pug

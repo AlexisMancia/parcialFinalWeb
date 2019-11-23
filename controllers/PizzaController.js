@@ -117,9 +117,8 @@ module.exports.delete = (req, res, next) => {
 
     Pizza.findOneAndDelete({nombre_pizza: req.params.nombre_pizza})
     .then((data) =>{
-        if (data) res.status(200).json(data)
+        if (data) res.status(200).json(data);
         else res.status(404).send();
-        res.render('botones');
     }).catch( err => {
         next(err);
     })
