@@ -2,10 +2,11 @@ const username_field = document.getElementById("username");
 const submit_btn = document.getElementById("submit_btn");
 
 function borrar(username){
-    fetch("https://parcial-final-web.herokuapp.com/borrar/"+username , {
+    fetch("http://localhost:3000/borrar/"+username , {
         method: "DELETE",
         header: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
         }
     })
     .then(async res =>{
