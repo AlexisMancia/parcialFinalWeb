@@ -7,7 +7,7 @@ const precio = document.getElementById("precio");
 function actualizar(username,especialidad1,masaTipo,tam,price){
     let thing = JSON.stringify({especialidad:especialidad1,tipo_masa:masaTipo,tamanio:tam,precio:price});
 
-    fetch("http://localhost:3000/actualizar/"+username , {
+    fetch("https://parcial-final-web.herokuapp.com/actualizar/"+username , {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
