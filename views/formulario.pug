@@ -1,0 +1,28 @@
+extends layout
+block content
+    div#formulario
+        form.form-style-7(method ="post")
+            h1 Agregar Pizza
+            p Introdusca datos
+            label(for="username") Nombre Pizza:
+            br
+            input#username(type="text", name="nombre_pizza" , required, placeholder="Quien ordena")
+            br
+            label(for="user") Especialidad
+            br
+            input#first_name(type="text", name="especialidad" , required, placeholder="Especialidad")
+            br
+            label(for="user") Tipo de Masa:
+            br
+            input#last_name(type="text", name="tipo_masa" , required, placeholder="Masa")
+            br
+            label(for="user") Tamanio:
+            br
+            input#tamanio(type="text", name="tamanio" , required, placeholder="Tamanio")
+            br
+            label(for="user") Precio:
+            br
+            input#precio(type="text", name="precio" , required, placeholder="precio")
+            br
+            input(type="submit" value="Agregar")
+        include botones.pug
